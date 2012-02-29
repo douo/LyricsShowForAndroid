@@ -1,22 +1,6 @@
 package info.dourok.android.lyrics;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import java.util.Iterator;
-import java.util.List;
-
-import org.jaudiotagger.audio.AudioFile;
-import org.jaudiotagger.audio.AudioFileIO;
-import org.jaudiotagger.tag.FieldKey;
-import org.jaudiotagger.tag.Tag;
-import org.jaudiotagger.tag.TagField;
-
-import android.os.storage.StorageManager;
-import android.util.Log;
 
 public class LyricsStorageManager {
 	public static final int FROM_TAG = 0x1;

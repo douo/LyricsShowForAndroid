@@ -169,11 +169,10 @@ public class LyricsView extends View implements LyricsPlayer {
 	private float mSpacingAdd = 0;
 
 	public void setSong(SongWrapper song) {
-
 		this.mSong = song;
-		this.mLyrics = mSong.getLyrics();
-		this.mLyricsItems = mLyrics.getLyricsItems();
 		if (song.getLyrics() != null) {
+			this.mLyrics = mSong.getLyrics();
+			this.mLyricsItems = mLyrics.getLyricsItems();
 			updateLyrics();
 		}
 
